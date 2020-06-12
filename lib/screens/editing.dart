@@ -18,7 +18,9 @@ class Edit_notebook_sqlite extends State<Edit_notebook> {
   TextEditingController first_textfield = TextEditingController();
   TextEditingController second_textfield = TextEditingController();
 
-  String appBarTitle;
+  //Iss string me mai ne MyApp rakh diya hai aur ab error nhi aa raha
+  //Aap change kr k jo rakhna hai rakh lo
+  String appBarTitle = "MyApp";
   Edit_notebook_sqlite(String appBarTitle);
 
   @override
@@ -40,6 +42,7 @@ class Edit_notebook_sqlite extends State<Edit_notebook> {
                 moveToLastScreen();
               },
               ),
+              //Ye TextWidget ki wajah se error aa raha tha
               title: Text(appBarTitle),
             ),
             body: Container(
